@@ -1,18 +1,7 @@
-<?php
-if (isset($_REQUEST['submit'])) {
-    $gender = $_REQUEST['gender'];
-    if ($gender != "") {
-        echo $gender . ' is selected';
-    } else {
-        echo 'Invalid Input';
-    }
-}
-?>
-
 <html>
 
 <head>
-    <title>Gender</title>
+    <title>TASK GENDER</title>
 </head>
 
 <body>
@@ -22,9 +11,19 @@ if (isset($_REQUEST['submit'])) {
             <input type="radio" name="gender" value="Male">Male
             <input type="radio" name="gender" value="Female">Female
             <input type="radio" name="gender" value="Other">Other
-        </fieldset>
-        <br />
+            <hr>
         <input type="submit" name="submit" value="Submit">
+        <br>
+            <?php
+            if (isset($_REQUEST['submit'])) {
+                if (isset(($_REQUEST['gender']))) {
+                    echo  $_REQUEST['gender'] . ' is Submitted';
+                } else {
+                    echo "Select Atleast One..!";
+                }
+            }
+            ?>
+        </fieldset>
     </form>
 </body>
 

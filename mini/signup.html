@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Registration Page</title>
+</head>
+<body>
+
+	<form method="post" action="signupcheck.php">
+		<fieldset>
+			<legend>Registration</legend>
+			<table>
+				<tr>
+					<td>Id:</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="userid" value=""></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+				</tr>
+				<tr>
+					<td><input type="password" name="password" value=""></td>
+				</tr>
+				<tr>
+					<td>Confirm Password: </td>
+				</tr>
+				<tr>
+					<td><input type="password" name="password" value=""></td>
+				</tr>
+				<tr>
+					<td>Name</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="username" value=""></td>
+				</tr>
+				<tr>
+					<td>User Type: <hr></td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="userType" value="User"> User
+                        <input type="radio" name="userType" value="Admin"> Admin
+                    </td>
+				</tr>
+				<tr>
+					<td><hr><input type="submit" name="submit" value="Signup"></td>
+					<td><br><a href="login.html">Sign In</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

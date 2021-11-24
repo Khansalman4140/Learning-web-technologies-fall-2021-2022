@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CALCULATOR</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<center>
+<h1>Calculator</h1>
+<div class="container">
+<table align="center" >
+<div class="sub">
+<tr>
+<td colspan="4" height="20px" align="right" id="resultPrev"></td>
+</tr>
+<tr>
+<td colspan="4" height="20px" align="right" id="operand"></td>
+</tr>
+<td colspan="4" height="20px" align="right" id="result"></td>
+</tr>
+</div>
+
+<tr>
+<td><button value="" onclick="clear()">CE</button></td>
+<td><button value="" onclick="clear()">C</button></td>
+<td><button value="" onclick="btn('DEL')">DEL</button></td>
+<td><button value="/" onclick="btnf('/')">/</button></td>
+</tr>
+<tr>
+<td><button value="7" onclick="btn(7)">7</button></td>
+<td><button value="8" onclick="btn(8)">8</button></td>
+<td><button value="9" onclick="btn(9)">9</button></td>
+<td><button value="*" onclick="btnf('*')">*</button></td>
+</tr>
+<tr>
+<td><button value="4" onclick="btn(4)">4</button></td>
+<td><button value="5" onclick="btn(5)">5</button></td>
+<td><button value="6" onclick="btn(6)">6</button></td>
+<td><button value="-" onclick="btnf('-')">-</button></td>
+</tr>
+<tr>
+<td><button value="1" onclick="btn(1)">1</button></td>
+<td><button value="2" onclick="btn(2)">2</button></td>
+<td><button value="3" onclick="btn(3)">3</button></td>
+<td><button value="+" onclick="btnf('+')">+</button></td>
+</tr>
+<tr>
+<td><button value="" onclick="btnf('+/-')">+/-</button></td>
+<td><button value="0" onclick="btn('0')">0</button></td>
+<td><button value="." onclick="btn('.')">.</button></td>
+<td><button value="=" onclick="cal()">=</button></td>
+</tr>
+</table>
+</div>
+</center>
+<script src="script.js"></script>
+</body>
+</html>

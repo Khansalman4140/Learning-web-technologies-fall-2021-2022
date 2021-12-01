@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+	<title>JQUERY</title>
+</head>
+<body>
+	<form>
+	<table border="1" width="100%">
+		<tr>
+			<th colspan="3" height="100px" width="100px"> <h1>Person Profile</h1></th>
+		</tr>
+		<tr>
+			<td align="left" height="50px" width="100px" > Name </td>
+			<td align="left" height="50px" width="100px" > <input type="text" id="name" value=""> </td>
+			<td align="left" height="50px" width="100px" > <span id="name_msg"></span></td>
+		</tr>
+		<tr>
+			<td align="left" height="50px" width="100px"> Email </td>
+			<td align="left" height="50px" width="100px"> <input type="email" id="email" value=""> </td>
+			<td align="left" height="50px" width="100px" id="email_msg"> </td>
+		</tr>
+		<tr>
+			<td align="left" height="50px" width="100px"> Gender </td>
+			<td align="left" height="50px" width="100px"> 
+				<input type="radio" id="male" value="Male"> Male
+				<input type="radio" id="female" value="Female"> Female
+				<input type="radio" id="other" value="Other"> Other 
+			</td>
+			<td align="left" height="50px" width="100px" id="gender_msg"> </td>
+		</tr>
+		
+		<tr>
+			<td align="left" height="50px" width="100px"> Date of Birth </td>
+			<td align="left" height="50px" width="100px"> 
+				<input type="date" id="dob" value=" "> 
+			</td>
+			<td align="left" height="50px" width="100px" id="dob_msg"> </td>
+		</tr>
+
+		<tr>
+			<td align="left" height="50px" width="100px"> Blood Group </td>
+			<td align="left" height="50px" width="100px"> 
+				<select id="bg" name="">
+					<option value="" selected>A+</option>
+					<option value="">A-</option>
+					<option value="">B+</option>
+					<option value="" >B-</option>
+					<option value="">AB+</option>
+					<option value="">AB-</option>
+					<option value="">0+</option>
+					<option value="" >0-</option>
+				</select> 
+            </td>
+			<td align="left" height="50px" width="100px" id="bg_msg"> </td>
+		</tr>
+
+		<tr>
+			<td align="left" height="50px" width="100px"> Degree</td>
+			<td align="left" height="50px" width="100px"> 
+				<input type="checkbox" id="ssc" value=""> SSC
+				<input type="checkbox" id="hsc" value=""> HSC
+				<input type="checkbox" id="bsc" value=""> BSc 
+			</td>
+			<td align="left" height="50px" width="100px" id="degree_msg"> </td>
+		</tr>
+
+		<tr>
+			<td align="left" height="50px" width="100px"> Photo</td>
+			<td align="left" height="50px" width="100px"> 
+				<input type="file" id="file" value=""> 
+			</td>
+			<td id="file_msg"></td>
+			
+		</tr>
+
+		<tr>
+			<td colspan="3" align="right" height="50px" width="100px">
+				<input type="button" id="submit" value="Submit"/>
+				<input type="reset" id="reset" value="Reset"/>
+            </td>
+			
+		</tr>
+		
+	</table>
+</form>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
